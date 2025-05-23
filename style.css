@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+
+    background: linear-gradient(to bottom right, #d8e9ff, #739be7);
+    background-attachment: fixed;
+}
+
+header {
+    background: linear-gradient(90deg, #9ccdf7, #1c3faa);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #003399;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #5f5c5c;
+}
+
+
+.main-menu img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.main-menu img:hover {
+    transform: scale(1.1);
+}
+
+.hero {
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.btn_container {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.hero .btn {
+    background: rgb(140, 187, 242);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero .btn::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: top 0.3s ease;
+    z-index: -2;
+    border-radius: 30px;
+}
+
+.hero .btn:hover {
+    color: #000;
+}
+
+footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ccc; 
+    padding: 20px;
+    font-size: 14px;
+    text-align: left; 
+    margin-top: 60px;
+    font-family: 'Bangers', cursive;
+}
+
+
+
+
+
+.gallery img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    gap: 30px;
+    justify-items: center;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.game-card {
+    text-align: center;
+    max-width: 220px;
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.game-card img:hover {
+    transform: scale(1.05);
+}
+
+.game-card p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #333;
+    font-weight: bold;
+}
