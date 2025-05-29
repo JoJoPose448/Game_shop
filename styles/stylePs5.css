@@ -141,7 +141,7 @@ footer {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 2 колонки */
+    grid-template-columns: repeat(4, 1fr); /* 2 колонки */
     gap: 30px;
     justify-items: center;
     margin-top: 40px;
