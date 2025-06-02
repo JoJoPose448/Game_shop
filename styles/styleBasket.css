@@ -209,3 +209,157 @@ footer {
 }
 
 
+.checkout-panel {
+    position: fixed;
+    top: 0;
+    left: -350px;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+    padding: 20px;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.checkout-panel.active {
+    left: 0;
+}
+
+.checkout-panel h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #1c3faa;
+}
+
+.checkout-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.checkout-item img {
+    width: 50px;
+    height: 70px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.checkout-item span {
+    flex-grow: 1;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.add-btn {
+    background-color: #1c3faa;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.add-btn.selected {
+    background-color: #10a336;
+}
+
+.checkout-panel {
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: width 0.3s ease;
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.checkout-panel.active {
+  width: 450px; /* шире при активном состоянии */
+  max-height: 600px;
+}
+
+.checkout-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkout-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.add-btn {
+  margin-left: auto;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.add-btn.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+#orderForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#orderForm label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#orderForm input[type="tel"] {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#orderForm .submit-btn {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+#orderForm .submit-btn:hover {
+  background-color: #0056b3;
+}
+
+
+.btn_main-btn{
+    background-color: #1c3faa;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn_main-btn.selected {
+    background-color: #10a336;
+}
